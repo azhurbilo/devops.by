@@ -1,0 +1,53 @@
+# Site wide configuration
+
+title: devops.by
+locale: ru_RU
+description: о культуре разработки
+logo: toxic.jpg
+search: true
+url: http://devops.by
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+ 
+
+# Site owner
+owner:
+  name: Artem Zhurbila
+  avatar: me_photo.jpg
+  email: artemzhurbilo@gmail.com
+  disqus-shortname: devops-by
+  twitter: #username
+  facebook: #username
+  github: azhurbilo
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: zhurbila
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  google:
+    plus: #username
+    analytics: UA-50381225-1
+    verify:
+    ad-client:
+    ad-slot: 
+  bing-verify:
