@@ -5,6 +5,7 @@ locale: ru_RU
 description: о культуре разработки
 logo: toxic.jpg
 search: true
+# comment url: to work on localhost
 url: http://devops.by
 
 # Jekyll configuration
@@ -17,8 +18,11 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
+  - jekyll-feed
+#  - jekyll-gist
 
 kramdown:
+  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
@@ -26,7 +30,7 @@ kramdown:
   enable_coderay: false
 
 include: [".htaccess"]
-exclude: ["build.sh", "deploy.sh", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+exclude: ["build.sh", "Makefile", "deploy.sh", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
  
 
 # Site owner

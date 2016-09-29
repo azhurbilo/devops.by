@@ -1,3 +1,6 @@
 .idea
 .sass-cache
 _site
+codekit-config.json
+node_modules
+.jekyll-metadata
