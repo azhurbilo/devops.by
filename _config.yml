@@ -5,8 +5,8 @@ locale: ru_RU
 description: о культуре разработки
 logo: toxic.jpg
 search: true
-# comment url: to work on localhost
-url: http://devops.by
+# url move to _config_prod.yml
+# url: http://devops.by
 
 # Jekyll configuration
 

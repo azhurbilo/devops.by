@@ -5,6 +5,10 @@ NAME?=.
 BASEDIR=$(CURDIR)
 S3_BUCKET=devops-by
 
+CYAN=\033[0;36m
+GREEN=\033[0;32m
+NC=\033[0m
+
 # @ means "execute the shell command : and don't echo the output.
 
 # https://jekyllrb.com/docs/usage/
@@ -16,6 +20,7 @@ help:
 	@echo '   make new          generate new web site template                        '
 	@echo '   make build        transform your templates into ./_site                 '
 	@echo '   make run          start local webserver for hosting static files        '
+	@echo '   make push         deploy site to PROD S3                                '
 
 # - serve command will watch for changes automatically
 # - changes made to _config.yml during automatic regeneration are not loaded until the next execution.
@@ -39,13 +44,18 @@ new:
     docker run -ti --rm -v $(BASEDIR):/app -w /app jekyll/jekyll:$(JEKYLL_VERSION) jekyll new $$SITE_NAME; \
     echo "--- Check generated dir >> $(BASEDIR)/$$SITE_NAME"
 
+# build for prod
 build:
+	@echo "${CYAN}Start build for PROD >>${NC}"
 	docker run -ti --rm -v $(BASEDIR)/$(NAME):/app -w /app jekyll/jekyll:$(JEKYLL_VERSION) \
-    sh -c "bundle exec jekyll build"
+    sh -c "bundle exec jekyll build --config=_config.yml,_config_prod.yml"
 
 run:
 	docker run -ti --rm -v $(BASEDIR)/$(NAME):/app -w /app -p 4000:4000 jekyll/jekyll:$(JEKYLL_VERSION) \
-    sh -c "bundle install && bundle exec jekyll serve"
+    sh -c "bundle install && bundle exec jekyll serve --drafts"
 	@echo 'Now browse to http://localhost:4000'
 
-
+push: build
+	@echo "${CYAN}Start deploy to PROD >>${NC}"
+	docker run -v ~/.aws:/root/.aws -v $(BASEDIR)/$(NAME):/app -w /app cgswong/aws:latest aws s3 sync ./_site/ s3://devops.by
+	@echo "${GREEN}Deploy to PROD success!${NC}"
