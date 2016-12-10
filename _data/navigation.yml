@@ -3,11 +3,11 @@
 - title: Blog
   url: /blog/
 
-- title: Notes
-  url: /notes/
-
 - title: Books
   url: /books/
+
+- title: Knowledge base
+  url: /knowledge-base/
 
 - title: Search
   url: /search/
