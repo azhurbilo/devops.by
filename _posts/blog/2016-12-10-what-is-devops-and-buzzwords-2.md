@@ -3,6 +3,9 @@ layout: post
 title: Что такое DevOps? Buzzwords - хорошо или плохо? (Часть 2)
 excerpt: ""
 categories: blog
+excerpt: "Прошло уже больше 3 лет, после того как я опубликовал в этом блоге первую статью 'Что такое DevOps?'
+Далее я поделюсь тем, как изменилось мое отношение за это время к devops и другим модным терминам."
+excerpt_show: false
 tags: [management, team, buzzword, people, speculation]
 comments: true
 share: true

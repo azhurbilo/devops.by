@@ -4,6 +4,10 @@ title: Что такое DevOps?
 excerpt: ""
 modified: 2013-11-10
 categories: blog
+excerpt: "DevOps - новый стандарт в разработке. Учитывая, что инфраструктура
+современных систем настолько сложна, что человек не справляется с ее поддержкой. Всё должно быть автоматизировано.
+Только не следует воспринимать devops исключительно как автоматизацию."
+excerpt_show: false
 tags: [theory, management, team, version-control-system, infrastructure-as-code, configuration-management]
 comments: true
 share: true
