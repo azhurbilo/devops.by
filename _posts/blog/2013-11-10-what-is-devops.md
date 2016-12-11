@@ -10,7 +10,7 @@ share: true
 ---
 
 ![1 article logo]({{ site.url }}/images/what-is-devops/avatar-1.png)
-{: .center}
+{: .center .article-logo}
 
 ### Определение:
 
@@ -172,11 +172,11 @@ Monitoring | Nagios, Zabbix, Cacti
 
 ### Источники:
 
-* [http://www.gartner.com/it-glossary/devops](http://www.gartner.com/it-glossary/devops)
-* [http://habrahabr.ru/company/scrumtrek/blog/166039/](http://habrahabr.ru/company/scrumtrek/blog/166039/)
-* [http://devopswiki.net/index.php/DevOps](http://devopswiki.net/index.php/DevOps)
-* [https://www.ibm.com/developerworks/ru/library/a-devops1/](https://www.ibm.com/developerworks/ru/library/a-devops1/)
-* [http://dev2ops.org/2010/02/what-is-devops/](http://dev2ops.org/2010/02/what-is-devops/)
+* [http://www.gartner.com/it-glossary/devops](http://www.gartner.com/it-glossary/devops){:target="_blank"}
+* [http://habrahabr.ru/company/scrumtrek/blog/166039/](http://habrahabr.ru/company/scrumtrek/blog/166039/){:target="_blank"}
+* [http://devopswiki.net/index.php/DevOps](http://devopswiki.net/index.php/DevOps){:target="_blank"}
+* [https://www.ibm.com/developerworks/ru/library/a-devops1/](https://www.ibm.com/developerworks/ru/library/a-devops1/){:target="_blank"}
+* [http://dev2ops.org/2010/02/what-is-devops/](http://dev2ops.org/2010/02/what-is-devops/){:target="_blank"}
 
 
 
