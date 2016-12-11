@@ -21,12 +21,13 @@ gems:
   - jekyll-feed
 #  - jekyll-gist
 
+# https://kramdown.gettalong.org/converter/html.html
 kramdown:
   input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..2
+  toc_levels: 2..4
   enable_coderay: false
 
 include: [".htaccess"]
