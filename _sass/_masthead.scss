@@ -109,3 +109,9 @@
     @include font-size(20);
   }
 }
+
+
+.img-border img{
+  padding: 3px;
+  background-color: rgba(202, 202, 202, 0.23);
+}
