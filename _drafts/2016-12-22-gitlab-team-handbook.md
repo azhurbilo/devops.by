@@ -113,6 +113,13 @@ with the rest of the team through the #support or #thanks chat channel. Read the
 often it contains a question or suggestion for improvement which should be followed up on.
 
 
+Onboarding Checklist -> https://about.gitlab.com/handbook/support/onboarding/checklist
+
+>>>> https://about.gitlab.com/handbook/support/
+
+### Support Policies
+
+
 
 
 
