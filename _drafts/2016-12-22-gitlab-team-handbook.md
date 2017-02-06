@@ -60,14 +60,14 @@ share: true
 
 ### Service Engineer Onboarding
 
-#### Expectations of the support team
+Expectations of the support team:
 
 - Always be friendly and respectful.
 - Be open to new ideas and points of view.
 - It is OK if you don't know something. You can always ask someone else.
 - It is OK to say no to a customer, but try to suggest a workaround and escalate to a Senior if necessary.
 
-#### Bootcamp Checklist for Training of New Service Engineers
+Checklist for Training of New Service Engineers:
  
 Your hiring manager should create an issue with this checklist on the support team issue tracker
 for you as part of your onboarding.
@@ -85,24 +85,25 @@ https://about.gitlab.com/handbook/support/onboarding/checklist/
 * Stage 5. Gathering Diagnostics
 * Stage 6. On Call Duty
 
-#### Tools for support
+
+### Tools for support
 
 We use Zendesk to handle tickets, and we will sometimes schedule calls. That is most often done through Zoom,
 but can also be done through WebEx if the customer's system does not allow them to install the Zoom plugin.
 Zoom is a powerful and light-weight videoconferencing tool that works for 90% of the customer calls.
 For some customers, only Cisco systems are allowed and for those cases, WebEx will be the best tool for calls. 
 
-#### Point to documentation, or make it
+### Point to documentation, or make it
 
 As a general rule, you should always include a link to the applicable documentation as part of your response to a ticket.
 If the documentation does not exist yet, then make the documentation and send the link in the response.
 
-#### Recording information about the organization
+### Recording information about customer organization
 
 We use ZenDesk Organization Profiles to store relevant information about the customer, like environment setup, 
 hardware specs, usage patterns, etc, so that if you need this information, it is readily available from within ZenDesk. 
 
-#### Receiving feedback from customer
+### Receiving feedback from customer
 
 After 24 hours of marking the ticket as solved a survey is sent to our customers, where they can rate the level of support they received. If a
 customer rates a ticket to which you were assigned as bad, an email will be sent to you and the ZenDesk manager to notify you of the fact. 
@@ -111,11 +112,6 @@ When this happens, you should let a Senior know about the problem and follow up 
 You will also receive a message if the feedback is positive, and it is encouraged to celebrate those "wins" 
 with the rest of the team through the #support or #thanks chat channel. Read the positive feedback carefully, 
 often it contains a question or suggestion for improvement which should be followed up on.
-
-
-Onboarding Checklist -> https://about.gitlab.com/handbook/support/onboarding/checklist
-
->>>> https://about.gitlab.com/handbook/support/
 
 ### Support Channels
 
@@ -179,11 +175,11 @@ runbooks rules:
 1. Make it quick - add links for checks
 2. Don't make me think - write clear guidelines, write expectations
 3. Recommended structure:
-- Symptoms - how can I quickly tell that this is what is going on
-- Pre-checks - how can I be 100% sure problem exist
-- Resolution - what do I have to do to fix it
-- Post-checks - how can I be 100% sure that it is solved
-- Rollback - optional, how can I undo my fix
+  - Symptoms - how can I quickly tell that this is what is going on
+  - Pre-checks - how can I be 100% sure problem exist
+  - Resolution - what do I have to do to fix it
+  - Post-checks - how can I be 100% sure that it is solved
+  - Rollback - optional, how can I undo my fix
 
 
 ### Developers on Support Team Rotation (fix4all)
@@ -198,39 +194,36 @@ There are several goals:
 - Increase customer awareness within the development team.
 - Foster better cooperation between members of different groups.
 
+### Infrastructure transperancy
+
 Gitlab has **public open grafana** - http://monitor.gitlab.net/
 
-### Dependencies
+
+## Dependencies
 
 GitLab can be installed through an Omnibus package or from source on different Linux distributions and macOS.
 In order to maintain portability, **we need to avoid adding extra dependencies** and use of exotic database extensions.
 Every time you choose between changes in the application code or adding new dependencies, you should give priority
 to the first because this is easier to maintain and setup.
 
-### Submit your code
+## Submit your code
 
 In GitLab all code should go through a review process before it can be merged. 
 Unless the change is very minor, or is fixing a bug that was introduced 
 in the same version, **add an entry to CHANGELOG**.
 
-### Ruby Gems
+## Ruby Gems
 
 When building and publishing Gems for GitLab **make sure multiple developers have access to** said Gem on RubyGems.org.
 This ensures a Gem doesn't end up being orphaned because the original author left,
 lost their credentials, passed away, etc. 
 
-### Feature Freeze
+## Feature Freeze
 
 5 working days before the 22nd the stable branches for the upcoming release will be frozen for major changes.
 Merge requests may still be merged into master during this period.
 
-### Inactivity close of an issue
-
-It's been at least 2 weeks (and a new release) since we heard from you. 
-I'm closing this issue but if you still experience this problem, 
-**please open a new issue (but also reference the old issue(s))**.
-
-### Choosing something to work on
+## Choosing something to work on
 
 Start working on things with the highest priority in the current milestone.
 Choose something that you’re able to tackle.
@@ -245,6 +238,9 @@ Sort by priority
 ```
 
 If you’re in doubt about what to work on, ask your lead. They will be able to tell you.
+
+
+## Issues
 
 ### Labelling issues
 
@@ -320,6 +316,7 @@ Check for duplicates! Searching for some keywords in the issue should give you a
 list of possibilities to scan through. Check both open and closed issues, as it may be a duplicate of a solved problem.
 
 ### Outdated issues
+
 For issues that haven't been updated in the last 3 months the "Awaiting Feedback" label should be added to the issue.
 
 After 14 days, if no response has been made by anyone on the issue, the issue should be closed.
@@ -333,12 +330,73 @@ We simply can't satisfy everyone.
 ask the reporter to provide more information or close the issue.
 - If we're definitely not going to add a feature/change, say so and close the issue.
 
-TODO don't know where to CONTINUE
 
-# Источники:
 
-* [logo статьи](https://www.pinterest.com/pin/445363850625216944){:target="_blank"}
-* 
+# Marketing
+
+## Marketing Team Purpose
+
+The GitLab Marketing team is here to do the following:
+
+- Meet board approved company goals and metrics.
+- Support the GitLab community with education and feedback outlets.
+- Enable anyone to contribute to our open source product.
+- Message the GitLab product in an authentic and helpful way.
+- Help each other to achieve our individual and company OKRs.
+
+Some forums that developers use to get information are 
+StackOverflow, Hacker News, Reddit, Twitter, GitLab Documentation, GitHub, a basic Google search, 
+and all of these channels should be taken into account when thinking about how to market a developer product. 
+Where possible, try to offer community support via these forums. Be responsive.
+
+Marketing Production:
+
+- Blog
+- Swag
+- Events
+- Talks
+- Docs
+- Website
+- Webcasts
+- University
+
+Marketing hiring public plan:
+
+https://about.gitlab.com/handbook/marketing/#hiring-plan
+
+## GitLab Blog
+
+**EVERYONE CAN CONTRIBUTE**
+
+Anatomy of a Blog Post:
+
+1. Big Picture
+2. Introduction
+3. Body
+4. Conclusion
+
+Community Writers Program: **Get paid to write for GitLab**
+
+You can earn up to $200 per article writing for the GitLab Blog.
+
+
+
+# Sales
+
+Gitlab use Salesforce
+
+Customer On-boarding Checklist: https://about.gitlab.com/handbook/customer-success/
+
+Sales Qualification Questions: https://about.gitlab.com/handbook/sales-qualification-questions/
+
+Standard questions from possible customer: https://about.gitlab.com/handbook/positioning-faq/
+
+Sales demo: https://about.gitlab.com/handbook/sales/demo/
+
+
+
+# Finance
+
 
 
 
