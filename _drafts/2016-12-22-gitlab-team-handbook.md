@@ -117,11 +117,73 @@ Onboarding Checklist -> https://about.gitlab.com/handbook/support/onboarding/che
 
 >>>> https://about.gitlab.com/handbook/support/
 
-### Support Policies
+### Support Channels
+
+When an emergency ticket comes in, it triggers a PagerDuty incident. 
+All Service Engineers must have the PagerDuty application installed on their phones 
+once they are added to the on-call rotation schedule.
+
+When a PD incident is triggered, the alarm will go off for the person on call. 
+*Y*ou should acknowledge the incident within 5 minutes, or the person on second level support will be alerted.**
+The PD incident will have the link to the corresponding Zendesk issue from where you will continue the conversation with the customer.
+
+Once acknowledged, you need to login to Zendesk, go to the corresponding ticket and let the customer know that 
+you will handle their case. On this response you should ask for the best way to contact them. 
+Usual channels are Phone, Skype, WebEx or Hangouts.
+
+If you are unable to help the customer and their instance is in a critical state (unavailable, uncertainty of data loss, etc.), 
+you should escalate the PD incident to second level support, and work through the issue together.
+
+**You should always answer the regular tickets in a FIFO manner.**
 
 
+### Support on-call
+
+**Always remember! Don't panic!**
+
+We use PagerDuty to set the on-call schedules, and to route notifications to the correct on-call hero.
+
+**We only have 1 person at any time doing on call, we avoid having fallbacks because that leads 
+to ignore pages because "the next fallback will pick it up", we take on call seriously.**
+
+**We do 7 days of 12 hours shifts in a follow-the-sun style, based on your location.**
+
+After 10 minutes, if the alert has not been acknowledged, everyone on the on-call rotation is alerted.
+**After a further 15 minutes, management is alerted.**
+
+We track metrics on uptime first, then on time to fix (TTF). 
+We do so to understand where the pain is, and how much time are we investing in fixing a problem 
+and use those metrics to drive automation priorities.
+
+From Slack you can page by using the slash pd command, like so: `/pd message for the on call`
+
+This will trigger high urgency notification rules and escalates as needed.
 
 
+### Infrastructure documentation
+
+The main infrastructure documentation can be found in 2 places:
+
+- Runbooks
+- Chef cookbooks
+
+Gitlab RunBooks - provide simple solutions for common problems, they should be pointed from our alerting system.
+
+**Runbooks are public, but they are automatically mirrored in our development environment, 
+this is so because if GitLab.com is down, those runbooks would not be available to take it up again.**
+
+https://dev.gitlab.org/cookbooks/runbooks
+
+runbooks rules:
+
+1. Make it quick - add links for checks
+2. Don't make me think - write clear guidelines, write expectations
+3. Recommended structure:
+- Symptoms - how can I quickly tell that this is what is going on
+- Pre-checks - how can I be 100% sure problem exist
+- Resolution - what do I have to do to fix it
+- Post-checks - how can I be 100% sure that it is solved
+- Rollback - optional, how can I undo my fix
 
 
 ### Developers on Support Team Rotation (fix4all)
@@ -135,6 +197,8 @@ There are several goals:
 - Increase the shared knowledge between developers and service engineers.
 - Increase customer awareness within the development team.
 - Foster better cooperation between members of different groups.
+
+Gitlab has **public open grafana** - http://monitor.gitlab.net/
 
 ### Dependencies
 
